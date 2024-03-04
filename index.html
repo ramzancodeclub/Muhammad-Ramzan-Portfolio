@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Muhammad Ramzan</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+        <img src="img/Muhammad-Ramzan-Logo.svg" alt="Muhammad Ramzan logo" />
+      </a>
+      </div>
+
+      <button type="button" class="nav-toggle" aria-label="toggle navigation" tabindex="0">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">My Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Muhammad Ramzan</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Front-end Developer & Code Enthusiast
+      </p>
+      <img
+        src="img/Muhammad Ramzan.PNG"
+        alt="a picture of Muhammad Ramzan smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Responsive Design</h3>
+          <p>
+            Responsiveness of a website plays an important role at
+            user experience. I ensure my design is looking good on any kind of
+            devices.
+          </p>
+        </div>
+        <!-- / service -->
+        <div class="service">
+          <h3>Design to Code</h3>
+          <p>
+            If web design is already crafted, I am here to convert Figma, PSD,
+            and Xd templates into well-performed websites
+          </p>
+        </div>
+        <!-- / service -->
+        <div class="service">
+          <h3>Front-end Development</h3>
+          <p>
+            I use React.js to build scalable, reusable, maintainable, and to
+            provide fast Single Page Applications.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn" tabindex="0">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am?</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & Developer based out of Pakistan
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Hi, I'm Muhammad Ramzan, a self-taught frontend developer based in
+          Lahore, Pakistan. I specialize in crafting dynamic web applications
+          using HTML, CSS, JavaScript, and React. With a passion for turning
+          creative ideas into functional and visually appealing experiences, I
+          actively contribute to the coding community on GitHub. My journey in
+          web development is fueled by a relentless curiosity and a commitment
+          to staying on the cutting edge of technology.
+        </p>
+      </div>
+
+      <img
+        src="img/Muhammad-Ramzan-02.jpg"
+        alt="Muhammad Ramzan"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+      <div class="buttons">
+        <button type="button">All</button>
+        <button type="button" data-btn="1">HTML & CSS</button>
+        <button type="button" data-btn="2">Bootstrap</button>
+        <button type="button" data-btn="3">Tailwindcss</button>
+        <button type="button" data-btn="4">JavaScript</button>
+        <button type="button" data-btn="5">SASS</button>
+        <button type="button" data-btn="6">API</button>
+        <button type="button" data-btn="7">React</button>
+      </div>
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <div class="portfolio__item" data-id="1" role="button" onclick="showPopup(1)" tabindex="0">
+          <img
+            src="img/Simple blog.jpg"
+            alt="Simple blog"
+            class="portfolio__img"
+            data-img="1"
+          />
+        </div>
+        <!-- Portfolio item 02 -->
+        <div class="portfolio__item" data-id="2" role="button" onclick="showPopup(2)" tabindex="0">
+          <img
+            src="img/deafblind blog.JPG"
+            alt="blog for deaf & blind people"
+            class="portfolio__img"
+            data-img="1"
+          />
+        </div>
+        <!-- Portfolio item 03 -->
+        <div class="portfolio__item" data-id="3" role="button" onclick="showPopup(3)" tabindex="0">
+          <img
+            src="img/digital agency.JPG"
+            alt="digital agency"
+            class="portfolio__img"
+            data-img="1"
+          />
+        </div>
+        <!-- Portfolio item 04 -->
+        <div class="portfolio__item" data-id="4" role="button" onclick="showPopup(4)" tabindex="0">
+          <img
+            src="img/space tourism.jpg"
+            alt="space tourism"
+            class="portfolio__img"
+            data-img="1"
+          />
+        </div>
+        <!-- Portfolio item 05 -->
+        <div class="portfolio__item" data-id="5" role="button" onclick="showPopup(5)" tabindex="0">
+          <img
+            src="img/food.jpg"
+            alt="food blog"
+            class="portfolio__img"
+            data-img="2"
+          />
+        </div>
+        <!-- Portfolio item 06 -->
+        <div class="portfolio__item" data-id="6" role="button" onclick="showPopup(6)" tabindex="0">
+          <img
+            src="img/IT solution.JPG"
+            alt="IT solution"
+            class="portfolio__img"
+            data-img="2"
+          />
+        </div>
+        <!-- Portfolio item 07 -->
+        <div class="portfolio__item" data-id="7" role="button" onclick="showPopup(7)" tabindex="0">
+          <img
+            src="img/yoga and meditation.JPG"
+            alt="Yoga & Mediation"
+            class="portfolio__img"
+            data-img="2"
+          />
+        </div>
+        <!-- Portfolio item 08 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(8)" tabindex="0">
+          <img
+            src="img/E-commerce.JPG"
+            alt="E-commerce"
+            class="portfolio__img"
+            data-img="3"
+          />
+        </div>
+        <!-- Portfolio item 09 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(9)" tabindex="0">
+          <img
+            src="img/Counter app.JPG"
+            alt="Counter app"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 10 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(10)" tabindex="0">
+          <img
+            src="img/calculator.jpg"
+            alt="Calculator"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 11 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(11)" tabindex="0">
+          <img
+            src="img/tip calculator.JPG"
+            alt="Tip Calculator"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 12 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(12)" tabindex="0">
+          <img
+            src="img/event count down timer.JPG"
+            alt="Event count down timer"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 13 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(13)" tabindex="0">
+          <img
+            src="img/daily goal.JPG"
+            alt="Daily goal"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 14 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(14)" tabindex="0">
+          <img
+            src="img/words generator.JPG"
+            alt="Words generator"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 15 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(15)" tabindex="0">
+          <img
+            src="img/Blackjack Game.jpg"
+            alt="Blackjack Game"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 16 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(16)" tabindex="0">
+          <img
+            src="img/dice game.jpg"
+            alt="Dice game"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 17 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(17)" tabindex="0">
+          <img
+            src="img/snake game.jpg"
+            alt="Snake game"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+        <!-- Portfolio item 18 -->
+        <div class="portfolio__item" role="button" onclick="showPopup(18)" tabindex="0">
+          <img
+            src="img/Leads Tracker Chrome Extension.jpg"
+            alt="Leads Tracker Chrome Extension"
+            class="portfolio__img"
+            data-img="4"
+          />
+        </div>
+      </div>
+      <!-- Portfolio popup -->
+      <div class="portfolio-popup">
+          <div class="portfolio-popup__inner">
+            <div class="portfolio-popup__content">
+              <button
+              type="button"
+              title="close"
+              class="close-btn popup-close-btn"
+            ></button>
+            <section class="popup-item">
+              <h1 class="section__title--intro">
+                <strong id="title--intro"></strong>
+              </h1>
+              <p class="section__subtitle section__subtitle--intro" id="subtitle--intro"></p>
+              <img class="intro__img" id="img--intro" alt="projects thumbnail" />
+            </section>
+
+            <div class="portfolio-popup-description">
+              <p id="popup-description"></p>
+              <hr>
+              <p><strong>Technologies:</strong> <span id="popup-tech"></span></p>
+              <hr>
+              <div class="portfolio-popup-btn--container">
+              <a href="" target="_blank" class="btn portfolio-popup-btn" id="popup-web-link" role="button">Visit</a>
+              <a href="" target="_blank" class="btn portfolio-popup-btn" id="popup-github-link" role="button">GitHub</a>
+            </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- My Skills -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">Skills & Tools</h2>
+      <p class="section__subtitle section__subtitle--skills">
+        The skills, tools and technologies I use to bring your products to life
+      </p>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/html.svg" alt="HTML logo" />
+            <p>HTML</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/css.svg" alt="CSS logo" />
+            <p>CSS</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/bootstrap.svg" alt="Bootstrap logo" />
+            <p>Bootstrap</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/tailwindcss.svg" alt="Tailwind-css logo" />
+            <p>tailwindcss</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/Sass.svg" alt="Sass logo" />
+            <p>SASS</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/javascript.svg" alt="JavaScript logo" />
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/jquery.png" alt="jQuery logo" />
+            <p>jQuery</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/react.svg" alt="React logo" />
+            <p>React</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/git.svg" alt="Git logo" />
+            <p>Git</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/github.svg" alt="GitHub logo" />
+            <p>GitHub</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/api.svg" alt="RESTfull APIs logo" />
+            <p>RESTfull APIs</p>
+          </div>
+        </div>
+        <!-- / skill -->
+
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/terminal.svg" alt="Terminal logo" />
+            <p>Command Line</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/vs-code.svg" alt="VS-Code logo" />
+            <p>VS Code</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/responsive.svg" alt="Responsive Design logo" />
+            <p>Responsive Website</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/w3c.svg" alt="W3C logo" />
+            <p>Web Accessibility</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/figma.svg" alt="Figma logo" />
+            <p>Figma</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <div class="skill">
+          <div class="skill--card">
+            <img src="img/icons/Adobe.svg" alt="Adobe logo" />
+            <p>Adobe Suite</p>
+          </div>
+        </div>
+        <!-- / skill -->
+        <!-- / service -->
+      </div>
+      <!-- / My Skills -->
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact">
+      <h2 class="section__title section__title--contact">Get In Touch</h2>
+      <p class="section__subtitle section__subtitle--contact">
+        I am currently looking for exciting job chances and experiences in web
+        development that can help me learn and become better. I'm open to
+        freelance or part-time web design work, as well as mid-level positions.
+        I'd be really happy to work with you and your great team. Please feel
+        free to contact me. I can't wait for the opportunity to work together.
+      </p>
+
+      <div class="contact">
+        <div class="contact--detail">
+          <div class="box">
+            <div class="icon">
+              <img src="img/icons/map.svg" alt="location-icon" />
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Lahore, Pakistan</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="img/icons/phone.svg" alt="phone-icon" />
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+92 300 5628238</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="img/icons/email.svg" alt="email-icon" />
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <a href="mailto:mramzanstv@gmail.com" tabindex="0">mramzanstv@gmail.com</a>
+            </div>
+          </div>
+          <div class="box social-links">
+            <h3>Connect with us:</h3>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a
+                  href="https://github.com/mramzanstv"
+                  title="GitHub"
+                  class="social-list__link"
+                  tabindex="0"
+                >
+                  <img src="img/icons/github2.svg" alt="github-icon" />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://www.linkedin.com/in/mramzan-jani/"
+                  title="Linkedin"
+                  class="social-list__link"
+                  tabindex="0"
+                >
+                  <img src="img/icons/linkedin.svg" alt="linkedin-icon" />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://twitter.com/mramzanstv"
+                  title="Twitter"
+                  class="social-list__link"
+                  tabindex="0"
+                >
+                  <img src="img/icons/twitter.svg" alt="twitter-icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Download CV" role="button"  class="btn btn--download" tabindex="0">
+            Download CV
+            <span
+              ><img src="img/icons/download.svg" alt="download-icon"
+            /></span>
+          </a>
+        </div>
+        <div class="contact--form">
+          <form action="https://formsubmit.co/mramzanstv@gmail.com" method="POST" />
+            <h3>Send me a message</h3>
+            <div class="input-box">
+              <input type="text" required name="Full Name" aria-label="Full Name" tabindex="0"/>
+              <span role="label" aria-label="Full Name">Full Name</span>
+            </div>
+            <div class="input-box">
+              <input type="text" required name="Email" aria-label="Email" tabindex="0"/>
+              <span role="label" aria-label="Email">Email</span>
+            </div>
+            <div class="input-box">
+              <textarea required name="Message" aria-label="Message" tabindex="0"></textarea>
+              <span role="label" aria-label="Type Your Message">Type Your Message</span>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="btn" required value="Send" aria-label="Send" tabindex="0"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+<!-- Scroll-up button -->
+<button id="scrollUpBtn" onclick="scrollToTop()" title="Back to Top"><span>&#187;</span></button>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Copyright © 2024 Muhammad Ramzan. All rights reserved.</p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
